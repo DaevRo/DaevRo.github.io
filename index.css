@@ -6,7 +6,7 @@
 body {
     background-image: url(images/background.png);
     background-size: 1280px 720px;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: scroll;
 }
