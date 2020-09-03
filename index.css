@@ -114,3 +114,14 @@ li a:hover {
     height: 100px;
     margin: 30px;
 }
+/* make website responsive */
+@media screen and (max-width: 600px){
+    body {
+        background-image: url(images/background.png);
+        /* background-repeat: no-repeat; */
+        background-size: 1080 1920;
+        background-attachment: fixed;
+        overflow: scroll;
+    }
+    ul
+}
