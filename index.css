@@ -190,9 +190,10 @@ header {
     font-size: 30px;
 }
 
-div.centerplayer div.mejs-container {
-    margin-right: auto;
-    margin-left: auto;
+.centerplayer  {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 /* HOME PAGE CSS */
 #hello {
