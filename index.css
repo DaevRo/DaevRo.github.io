@@ -190,11 +190,6 @@ header {
     font-size: 30px;
 }
 
-.centerplayer  {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
 /* HOME PAGE CSS */
 #hello {
     color: rgba(255, 255, 255, 0.795);
