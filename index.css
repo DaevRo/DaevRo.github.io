@@ -190,9 +190,9 @@ header {
     font-size: 30px;
 }
 
-audio {
-    margin-left: 30%;
-    margin-bottom: 10px;
+div.centerplayer div.mejs-container {
+    margin-right: auto;
+    margin-left: auto;
 }
 /* HOME PAGE CSS */
 #hello {
@@ -820,10 +820,6 @@ h2 {
     width: 80%;
 }
 
-audio {
-    margin-left: 30%;
-    margin-bottom: 10px;
-}
 }
 
 @media screen and (max-width: 800px) {
@@ -847,6 +843,7 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
 }
+
 }
 
 @media screen and (max-width: 500px) {
