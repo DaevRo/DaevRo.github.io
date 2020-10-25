@@ -189,7 +189,13 @@ header {
     text-align: center;
     font-size: 30px;
 }
-
+audio {
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
 /* HOME PAGE CSS */
 #hello {
     color: rgba(255, 255, 255, 0.795);
