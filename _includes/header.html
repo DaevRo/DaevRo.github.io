@@ -1,0 +1,24 @@
+<header>
+    <img id="logo" src="images/whiterun.png">
+
+    <div id="name">
+        {{ site.title }}<BR>
+        <input type="text" placeholder="Search Products">
+    </div>
+    <div id="headerul">
+        <ul>
+            <li class="headerli">
+                <a href={{ "/" | relative_url }}>HOME</a> 
+            </li>
+            <li class="headerli">
+                <a href={{ "/shop.html" | relative_url }}>SHOP</a>
+            </li>
+            <li class="headerli">
+                <a href={{ "/cart.html" | relative_url }}>CART</a>
+            </li>
+            <li class="headerli">
+                <a href={{ "/signin.html" | relative_url }}>LOG IN</a>
+            </li>
+        </ul>
+    </div>
+</header>

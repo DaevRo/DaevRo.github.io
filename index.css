@@ -1,127 +1,925 @@
+/* Custom fonts */
 @font-face {
-    font-family: manterah;
-    src: url(fonts/Manterah.ttf)
-
+    font-family: skyrim;
+    src: url(fonts/Skyrim\ Font.ttf)
 }
-body {
-    background-image: url(images/background.png);
-    /* background-repeat: no-repeat; */
+
+@font-face {
+    font-family: futura;
+    src: url(fonts/Futura.ttf)
+}
+
+
+/* Backgrounds */
+
+/* Home page background */
+#home {
+    font-family: futura;
+    background-image: url(images/home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    overflow: scroll;
+    background-size: cover;
 }
 
-ul {
-    list-style-type: none;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 98%;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
-    background-color: rgb(226, 119, 69);
-    border-radius: 10px;
-    border-style: solid;
-    border-color: rgb(7, 49, 35);
+/* shop background */
+#shop {
+    font-family: futura;
+    background-image: url(images/shop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* cart background */
+#cart {
+    font-family: futura;
+    background-image: url(images/cart.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* sign in Background */
+#signin {
+    font-family: futura;
+    background-image: url(images/signin.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* HEADER CSS */
+header {
+    font-family: skyrim;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(0, 0, 0, 0.800);
     border-width: 3px;
-    z-index:1;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
 }
 
-li {
-float: right;
-}
-
-li a {
-    display: block;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+#name {
+    font-size: 50px;
     text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-
-}
-
-li a:hover {
-    background-color: rgb(7, 49, 35);
-}
-
-
-.hello {
-    font-family: manterah;
-    color: white;
-    margin: 100px 10px 10px 10px;
-    text-align: center;
-    font-size: 70px;
-}
-
-#Daverock {
-    opacity: 60%;
-    border-radius: 100%;
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin: 20px auto 20px auto;
-
-    
-}
-
-.what {
-    text-align: center;
-    font-family: cursive;
-    color: white;
-    margin: 10px 10px 175px 10px;
-}
-
-.aboutme {
-    text-align: center;
-    font-family: cursive;
-    color: white;
-}
-
-.aboutmep {
-    text-align: center;
-    font-family: cursive;
-    color: white;
-    padding: 0px;
-    width: 80%;
-    margin: 0% auto;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin-top: 200px;
-
+    align-self: center;
+    grid-column: 2 / span 2;
 }
 
-.email {
-    max-width: auto;
-    height: 100px;
-    margin: 30px;
+#name input {
+    font-size: 40%;
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.github {
-    max-width: auto;
-    height: 100px;
-    margin: 0px;
-    padding: 30px;
+#logo {
+    margin-top: 2%;
+    width: 180px;
+    padding: 0;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    grid-column: 1;
 }
 
-.youtube {
-    max-width: auto;
-    height: 100px;
-    margin: 30px;
+#headerul {
+    justify-self: center;
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
 }
-/* make website responsive */
-@media screen and (max-width: 600px){
-    body {
-        background-image: url(images/background.png);
-        /* background-repeat: no-repeat; */
-        background-size: 1080 1920;
-        background-attachment: fixed;
-        overflow: scroll;
-    }
-    ul
+
+.headerli {
+    color: rgba(255, 255, 255, 0.795);
+    font-family: futura;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 0 15px;
+    display: inline;
+    margin: auto;
+    justify-self: center;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.headerli a {
+    color: rgba(255, 255, 255, 0.562);
+    text-decoration: none;
+    margin: auto;
+}
+
+.headerli a:hover {
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    justify-self: center;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+/* Footer CSS */
+#footer {
+    font-family: skyrim;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    height: auto;
+    margin-top: 5%;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+}
+
+#belathor {
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+#map {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+#contacttext {
+    margin-top: 6vh;
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 25px;
+    text-align: center;
+}
+
+#storelocation {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: 30px;
+    text-align: center;
+}
+
+#contactemail {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* HOME PAGE CSS */
+#hello {
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px #000000;
+}
+
+.specials {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 40vh;
+    margin-top: 10vh;
+    font-size: 30px;
+    text-shadow: black;
+}
+
+#heart {
+    height: 30vh;
+    align-self: center;
+    width: auto;
+}
+
+#potion {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#blacksoul {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#book {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+.specialtext {
+    font-family: skyrim;
+    text-shadow: black;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.795);
+    margin-top: 30vh;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: black;
+    opacity: 80%;
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 20px;
+    padding: 40px;
+    width: 50%;
+    margin: 20vh auto 0 auto;
+}
+
+.welcome {
+    font-family: skyrim;
+    text-shadow: #000000;
+    text-align: center;
+    font-size: 200%;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 20px;
+    width: 60%;
+    margin: 5vh auto 20vh auto;
+}
+
+.enterstore {
+    font-family: futura;
+    text-align: center;
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.795);
+    margin-top: 30vh;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: black;
+    opacity: 80%;
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 10px;
+    padding-left: 0;
+    width: 30%;
+    margin: 20vh auto 0 auto;
+}
+
+#goldtext {
+    color: gold;
+}
+
+/* SHOP PAGE CSS */
+/* Shop Nav */
+.shoplist {
+    font-family: futura;
+    font-size: 40px;
+    list-style-type: none;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    width: 15%;
+    padding: 40px 10px;
+    margin: auto;
+    position: fixed;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.shoplist a {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.562);
+    justify-self: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.shoplist a:hover {
+    color: white;
+    width: 80%;
+    margin: auto 10%;
+}
+
+/* Coming Soon */
+.dragonmasks {
+    color: white;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: auto;
+    text-align: center;
+}
+
+#comingsoon {
+    font-family: skyrim;
+    color: yellow;
+    text-shadow: black;
+    font-size: 400%;
+    text-align: center;
+}
+
+/* Armor Shop container and items */
+.armorshop {
+    font-family: futura;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 5vh;
+    margin-left: 15%;
+    margin-bottom: 20vh;
+}
+
+#steelchest {
+    object-fit: cover;
+    height: 30vh;
+    width: 30vh;
+    align-self: center;
+}
+
+#daedrichelm {
+    object-fit: cover;
+    height: 30vh;
+    width: 30vh;
+    align-self: center;
+}
+
+#helmofyngol {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#dragonscalearmor {
+    object-fit: cover;
+    height: 30vh;
+    width: 30vh;
+    align-self: center;
+}
+
+
+/* Book shop container and items */
+.bookshop {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30vh;
+    width: auto;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-left: 20%;
+    grid-gap: 5%;
+    margin-bottom: 20vh;
+}
+
+#alterationbook {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#conjurationbook {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#restorationbook {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+#illusionbook {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+}
+
+/* Food shop container and items  */
+.foodshop {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30vh;
+    width: auto;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-left: 20%;
+    grid-gap: 5%;
+    margin-bottom: 20vh;
+}
+
+#sweetroll {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#cheese {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#ale {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#bread {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+/* Potion shop container and items */
+.potionshop {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30vh;
+    width: auto;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-left: 20%;
+    grid-gap: 5%;
+    margin-bottom: 20vh;
+}
+
+#healthpotion {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#manapotion {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#staminapotion {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#skooma {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+/* ingredient shop and items */
+.ingredientshop {
+    font-family: futura;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 30vh;
+    width: auto;
+    margin-top: 10vh;
+    font-size: 30px;
+    margin-left: 20%;
+    grid-gap: 5%;
+    margin-bottom: 40vh;
+}
+
+#trollfat {
+    height: 25vh;
+    width: 25vh;
+    align-self: center;
+    object-fit: cover;
+}
+
+#butterflywing {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#blisterwort {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+#gianttoe {
+    height: 30vh;
+    width: auto;
+    align-self: center;
+    object-fit: cover;
+}
+
+/* shop category text css */
+h2 {
+    font-family: skyrim;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    margin-left: 20%;
+    margin-bottom: 0;
+    padding-top: 15%;
+}
+
+
+/* CART PAYMENT PAGE CSS */
+.cartrow {
+    grid-column: 1;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.cartcol {
+    grid-column: 2;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.cartconfirm {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.cartcontainer {
+    color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 5px 20px 15px 20px;
+    width: 80%;
+    margin: auto auto 10px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cartcontainer input {
+    font-size: 100%;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.logcontainer input {
+    font-size: 60%;
+    width: 60%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.cartconfirm input {
+    width: 2%;
+}
+
+#carttext {
+    color: rgba(255, 255, 255, 0.795);
+    font-family: futura;
+    font-size: 30px;
+    grid-column: 1 / span 4;
+    margin-top: 20px;
+}
+
+.cartitemcontainer {
+    color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 5px 20px 15px 20px;
+    width: 80%;
+    margin: auto auto 10px auto;
+    text-align: center;
+    display: grid;
+}
+
+#carttext {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.itemsincart {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#total {
+    grid-row: 3;
+}
+
+input.btn {
+    width: 60%;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px 20%;
+    border: none;
+    width: 60%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Sign in page CSS */
+.logcontainer {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(0, 0, 0, 0.800);
+    border-width: 3px;
+    outline-offset: -12px;
+    outline: 4px solid rgba(255, 255, 255, 0.795);
+    padding: 5px 20px 15px 20px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+#noaccount {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Repsonsiveness */
+@media screen and (max-width: 1000px) {
+/* HEADER */
+#name {
+    font-size: 240%;
+    justify-self: center;
+    grid-column: 2 / span 2;
+}
+#footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+/* Home page */
+.specials {
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+margin-bottom: 400px;
+}
+
+    /* Shop page */
+
+    /* Shop NAV */
+.shoplist {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 90%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0;
+}
+
+.shoplist a {
+    margin: 0;
+    text-align: center;
+}
+
+/* Shop containers and items */
+h2 {
+    margin-top: 400px;
+    margin-left: 0;
+    padding-top: 200px;
+}
+
+.armorshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bookshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 80vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.foodshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 80vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.potionshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 80vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ingredientshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* Log in page */
+.logcontainer {
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 800px) {
+/* Header */
+#name {
+    font-size: 200%;
+    grid-column: 2 / span 3;
+}
+a {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+#headerul {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding: auto 100px;
+}
+/* Shop page */
+.cartitemcontainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+}
+
+@media screen and (max-width: 500px) {
+/* Header CSS  */
+header {
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+padding: 0;
+}
+#name {
+font-size: 150%;
+grid-column: 2 / span 3;
+margin-right: 10px;
+}
+#headerul {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding: auto -10px;
+    font-size: 20%;
+    margin-bottom: 10px;
+}
+a {
+    font-size: 60%;
+}
+/* home page css */
+.specials {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+margin-bottom: 1100px;
+}
+/* Shop CSS */
+.armorshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 40vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bookshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 180vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+    
+.foodshop {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin-top: 5vh;
+    margin-bottom: 180vh;
+    margin-left: 0;
+    margin-right: 0;
+}
+    
+.potionshop {
+text-align: center;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+margin-top: 5vh;
+margin-bottom: 180vh;
+margin-left: 0;
+margin-right: 0;
+}
+    
+.ingredientshop {
+text-align: center;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+margin-top: 5vh;
+margin-bottom: 200vh;
+margin-left: 0;
+margin-right: 0;
+}
 }
