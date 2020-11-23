@@ -1,4 +1,0 @@
----
-layout: cart
-title: cart
----

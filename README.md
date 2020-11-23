@@ -1,5 +1,5 @@
-[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=3136297&assignment_repo_type=AssignmentRepo)
-<h1 align="center">Welcome to Assessment Two 👋</h1>
+[![Work in Repl.it](https://classroom.github.com/assets/work-in-replit-14baed9a392b3a25080506f3b7b6d57f295ec2978f6f33ec97e36a161684cbe9.svg)](https://classroom.github.com/online_ide?assignment_repo_id=3687308&assignment_repo_type=AssignmentRepo)
+<h1 align="center">Welcome to Assessment Three 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/alikahwaji/Lab-template#readme" target="_blank">
@@ -29,7 +29,7 @@
 
 Feedbacks, issues and requests will be in the issues page!<br />Feel free to check [issues page](https://github.com/alikahwaji/Lab-template/issues). You can also take a look at the [GitHub guide](https://guides.github.com/).
 
-## ⭐️ Lab Instructions 
+## ⭐️ Assessment Instructions 
 
 Check the :white_check_mark: Todos & :x: Not Todos 
 
@@ -49,17 +49,20 @@ Check the :white_check_mark: Todos & :x: Not Todos
 |:four:|Do NOT Share the assessment repo :closed_lock_with_key:|:heavy_multiplication_x:|
 |:five:|Do NOT re-use this repo for other coding activities :recycle:|:heavy_multiplication_x:|
 
-## :page_facing_up: Assessment Two Description
+## :page_facing_up: Assessment Three Description
 
-:arrow_right: Assessment Two Outline is provided in this README file, WEB503 Moodle and WEB503 MS teams. Follow the Assessment 
-              outline timeline and marking rubric
+:arrow_right: `Assessment Three Outline is provided in this README file, WEB503 Moodle and WEB503 MS teams. Follow the Assessment 
+              outline timeline and marking rubric`
+ 
+:arrow_right: `You will submit your brief document separately in assessment three dropbox.`
 
+:arrow_right: `You will use this repo to complete your web app code and submit a zipped folder with a url in the dropbox.`
 
-:arrow_right: You MUST follow the GitHub classroom repo instrucation provided in the repo README file.
+:arrow_right: `You MUST follow the GitHub classroom repo instrucation provided in the repo README file.`
 
 ## :books: Resources 
 
-|[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)|[W3schools](https://www.w3schools.com/js/default.asp)|[JavaScript Eloquent](https://eloquentjavascript.net/)|[Assessment Two Outline](https://drive.google.com/file/d/1l2n9NaDzorFODIohpzhuHg0fs1hSnwrg/view?usp=sharing)|
+|[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)|[W3schools](https://www.w3schools.com/js/default.asp)|[JavaScript Eloquent](https://eloquentjavascript.net/)|[Assessment Three Outline](https://drive.google.com/file/d/16kvoaYPlw4M4SSy8MQzE_FRMVDvdBpRY/view?usp=sharing)|
 |---|---|---|---|
 
 

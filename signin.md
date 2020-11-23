@@ -1,4 +1,0 @@
----
-layout: signin
-title: singin
----

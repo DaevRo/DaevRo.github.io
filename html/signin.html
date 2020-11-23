@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/JS/signin.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<header>
+    <img id="logo" src="/images/whiterun.png">
+
+    <div id="name">
+        Belathor's General Goods
+    </div>
+    <div id="headerul">
+        <ul>
+            <li class="headerli">
+                <a href="/html/home.html">HOME</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/shop.html">SHOP</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/cart.html">CART</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/signin.html">LOG IN</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body id="signin">
+    <p id="hello">"Me and you are the only sane ones."</p>
+    <div class="logcontainer">
+        <h3>LOG IN</h3>
+        <label for="uname">User Name</label>
+        <input type="text" id="txtuser" class="txtuser" placeholder="Dovahkiin">
+        <label>Password</label>
+        <input type="password" id="txtpwd" class="txtpass" placeholder="Enter Password" name="psw" required>
+        <p class="message"></p>
+        <button type="submit" onclick="myFunc()" id="submit" value="Log in" class="btn">Sign in</button>
+        <p id="noaccount">Don't have an account?</p>
+        <input type="submit" value="Sign up" class="btn" onclick=location.href="/html/signup.html">
+    </div>
+    <div id="footer">
+        <div>
+            <img id="belathor" src="/images/belathor.png">
+        </div>
+        <div>
+            <img id="map" src="/images/map.jpg">
+        </div>
+        <div>
+            <p id="contacttext">contact me:<br><a id="email" href="mailto: david-rowe2@live.nmit.ac.nz">Belathor@bestshopever.co.skyrim</a></p>
+            <p id="storelocation">Belathor's General Goods<br>Whiterun, Skyrim, Tamriel.</p>
+            <audio controls style="margin: 0 auto; display: block;">
+            <source src="/audio/Dragonborn.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+    </div>
+</body>

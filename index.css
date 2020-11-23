@@ -1,4 +1,5 @@
 /* Custom fonts */
+
 @font-face {
     font-family: skyrim;
     src: url(fonts/Skyrim\ Font.ttf)
@@ -9,10 +10,16 @@
     src: url(fonts/Futura.ttf)
 }
 
+body {
+    text-shadow: 2px 2px #000000;
+}
+
 
 /* Backgrounds */
 
+
 /* Home page background */
+
 #home {
     font-family: futura;
     background-image: url(images/home.png);
@@ -22,7 +29,9 @@
     background-size: cover;
 }
 
+
 /* shop background */
+
 #shop {
     font-family: futura;
     background-image: url(images/shop.png);
@@ -32,7 +41,9 @@
     background-size: cover;
 }
 
+
 /* cart background */
+
 #cart {
     font-family: futura;
     background-image: url(images/cart.png);
@@ -42,7 +53,9 @@
     background-size: cover;
 }
 
+
 /* sign in Background */
+
 #signin {
     font-family: futura;
     background-image: url(images/signin.jpg);
@@ -52,7 +65,9 @@
     background-size: cover;
 }
 
+
 /* HEADER CSS */
+
 header {
     font-family: skyrim;
     color: rgba(255, 255, 255, 0.795);
@@ -130,7 +145,9 @@ header {
     grid-row: 1;
 }
 
+
 /* Footer CSS */
+
 #footer {
     font-family: skyrim;
     background-color: rgba(0, 0, 0, 0.800);
@@ -190,7 +207,9 @@ header {
     font-size: 30px;
 }
 
+
 /* HOME PAGE CSS */
+
 #hello {
     color: rgba(255, 255, 255, 0.795);
     text-align: center;
@@ -207,13 +226,14 @@ header {
     height: 40vh;
     margin-top: 10vh;
     font-size: 30px;
-    text-shadow: black;
+    text-shadow: 2px 2px #000000;
 }
 
 #heart {
     height: 30vh;
     align-self: center;
     width: auto;
+    text-shadow: 2px 2px #000000;
 }
 
 #potion {
@@ -290,8 +310,12 @@ header {
     color: gold;
 }
 
+
 /* SHOP PAGE CSS */
+
+
 /* Shop Nav */
+
 .shoplist {
     font-family: futura;
     font-size: 40px;
@@ -327,7 +351,9 @@ header {
     margin: auto 10%;
 }
 
+
 /* Coming Soon */
+
 .dragonmasks {
     color: white;
     width: 100%;
@@ -345,7 +371,9 @@ header {
     text-align: center;
 }
 
+
 /* Armor Shop container and items */
+
 .armorshop {
     font-family: futura;
     font-size: 30px;
@@ -388,6 +416,7 @@ header {
 
 
 /* Book shop container and items */
+
 .bookshop {
     font-family: futura;
     color: rgba(255, 255, 255, 0.795);
@@ -427,7 +456,9 @@ header {
     align-self: center;
 }
 
+
 /* Food shop container and items  */
+
 .foodshop {
     font-family: futura;
     color: rgba(255, 255, 255, 0.795);
@@ -471,7 +502,9 @@ header {
     object-fit: cover;
 }
 
+
 /* Potion shop container and items */
+
 .potionshop {
     font-family: futura;
     color: rgba(255, 255, 255, 0.795);
@@ -515,7 +548,9 @@ header {
     object-fit: cover;
 }
 
+
 /* ingredient shop and items */
+
 .ingredientshop {
     font-family: futura;
     color: rgba(255, 255, 255, 0.795);
@@ -559,7 +594,9 @@ header {
     object-fit: cover;
 }
 
+
 /* shop category text css */
+
 h2 {
     font-family: skyrim;
     font-size: 60px;
@@ -573,6 +610,7 @@ h2 {
 
 
 /* CART PAYMENT PAGE CSS */
+
 .cartrow {
     grid-column: 1;
     margin: 0 auto;
@@ -647,6 +685,39 @@ h2 {
     display: grid;
 }
 
+.item {
+    height: 30vh;
+    align-self: center;
+    width: auto;
+    text-shadow: 2px 2px #000000;
+}
+
+.cart-item-title {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.cart-price {
+    font-size: 30px;
+    color: gold;
+}
+
+#payment-total-price {
+    font-size: 30px;
+    color: gold;
+}
+
+input.cart-quantity-input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 5%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+}
+
 #carttext {
     grid-column: 1;
     grid-row: 1;
@@ -658,6 +729,7 @@ h2 {
 }
 
 #total {
+    font-size: 30px;
     grid-row: 3;
 }
 
@@ -668,6 +740,34 @@ input.btn {
 label {
     margin-bottom: 10px;
     display: block;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-family: Futura;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #cc0000;
+    color: white;
+    font-family: Futura;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #ff0000;
 }
 
 .btn {
@@ -691,7 +791,73 @@ h4 {
     font-size: 20px;
 }
 
+
+/* Sign up page CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
 /* Sign in page CSS */
+
 .logcontainer {
     font-size: 30px;
     color: rgba(255, 255, 255, 0.795);
@@ -699,7 +865,7 @@ h4 {
     border-width: 3px;
     outline-offset: -12px;
     outline: 4px solid rgba(255, 255, 255, 0.795);
-    padding: 5px 20px 15px 20px;
+    padding: 25px 20px 15px 20px;
     width: 40%;
     margin: auto;
     text-align: center;
@@ -712,216 +878,204 @@ h4 {
     margin-bottom: 0;
 }
 
+
 /* Repsonsiveness */
+
 @media screen and (max-width: 1000px) {
-/* HEADER */
-#name {
-    font-size: 240%;
-    justify-self: center;
-    grid-column: 2 / span 2;
-}
-#footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-/* Home page */
-.specials {
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-margin-bottom: 400px;
-}
-
+    /* HEADER */
+    #name {
+        font-size: 240%;
+        justify-self: center;
+        grid-column: 2 / span 2;
+    }
+    #footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    /* Home page */
+    .specials {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 400px;
+    }
     /* Shop page */
-
     /* Shop NAV */
-.shoplist {
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 1fr;
-    height: auto;
-    width: 90%;
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
-    top: 0;
-}
-
-.shoplist a {
-    margin: 0;
-    text-align: center;
-}
-
-/* Shop containers and items */
-h2 {
-    margin-top: 400px;
-    margin-left: 0;
-    padding-top: 200px;
-}
-
-.armorshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 40vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.bookshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 80vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.foodshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 80vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.potionshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 80vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.ingredientshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 100vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-/* Log in page */
-.logcontainer {
-    width: 80%;
-}
-
+    .shoplist {
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 1fr;
+        height: auto;
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        top: 0;
+    }
+    .shoplist a {
+        margin: 0;
+        text-align: center;
+    }
+    /* Shop containers and items */
+    h2 {
+        margin-top: 400px;
+        margin-left: 0;
+        padding-top: 200px;
+    }
+    .armorshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 40vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bookshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 80vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .foodshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 80vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .potionshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 80vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ingredientshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* Log in page */
+    .logcontainer {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-/* Header */
-#name {
-    font-size: 200%;
-    grid-column: 2 / span 3;
-}
-a {
-    font-size: 100%;
-    padding: 0;
-    margin: 0;
-}
-#headerul {
-    grid-column: 1 / span 4;
-    grid-row: 2;
-    padding: auto 100px;
-}
-/* Shop page */
-.cartitemcontainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
+    /* Header */
+    #name {
+        font-size: 200%;
+        grid-column: 2 / span 3;
+    }
+    a {
+        font-size: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #headerul {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+        padding: auto 100px;
+    }
+    /* Shop page */
+    .cartitemcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 @media screen and (max-width: 500px) {
-/* Header CSS  */
-header {
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto;
-padding: 0;
-}
-#name {
-font-size: 150%;
-grid-column: 2 / span 3;
-margin-right: 10px;
-}
-#headerul {
-    grid-column: 1 / span 4;
-    grid-row: 2;
-    padding: auto -10px;
-    font-size: 20%;
-    margin-bottom: 10px;
-}
-a {
-    font-size: 60%;
-}
-/* home page css */
-.specials {
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-margin-bottom: 1100px;
-}
-/* Shop CSS */
-.armorshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 40vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-.bookshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 180vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-    
-.foodshop {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-top: 5vh;
-    margin-bottom: 180vh;
-    margin-left: 0;
-    margin-right: 0;
-}
-    
-.potionshop {
-text-align: center;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-margin-top: 5vh;
-margin-bottom: 180vh;
-margin-left: 0;
-margin-right: 0;
-}
-    
-.ingredientshop {
-text-align: center;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-margin-top: 5vh;
-margin-bottom: 200vh;
-margin-left: 0;
-margin-right: 0;
-}
+    /* Header CSS  */
+    header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0;
+    }
+    #name {
+        font-size: 150%;
+        grid-column: 2 / span 3;
+        margin-right: 10px;
+    }
+    #headerul {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+        padding: auto -10px;
+        font-size: 20%;
+        margin-bottom: 10px;
+    }
+    a {
+        font-size: 60%;
+    }
+    /* home page css */
+    .specials {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 1100px;
+    }
+    /* Shop CSS */
+    .armorshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 40vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bookshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 180vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .foodshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 180vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .potionshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 180vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ingredientshop {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 5vh;
+        margin-bottom: 200vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/JS/addcart.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<header>
+    <img id="logo" src="/images/whiterun.png">
+
+    <div id="name">
+        Belathor's General Goods
+    </div>
+    <div id="headerul">
+        <ul>
+            <li class="headerli">
+                <a href="/html/home.html">HOME</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/shop.html">SHOP</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/cart.html">CART</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/signin.html">LOG IN</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body id="shop">
+
+    <div class="shoplist">
+        <div><a href="#armorref">Armor</a></div>
+        <div><a href="#bookref">Books</a></div>
+        <div><a href="#foodref">Food</a></div>
+        <div><a href="#potionref">Potions</a></div>
+        <div><a href="#ingredientsref">Ingredients</a></div>
+    </div>
+    <div>
+        <p id="hello">I know what you're thinking. 'This Belethor, how could he part with such magnificent treasures?"</p>
+    </div>
+    <div class="dragonmasks">
+        <img src="/images/newarmor.jpg" alt="dragonmasks" style="width:60%">
+        <div id="comingsoon">New armor coming soon!
+        </div>
+    </div>
+
+    <div>
+        <h2 id="armorref">Armor</h2>
+    </div>
+    <div class="armorshop">
+        <div>
+            <img id="steelchest" src="/images/steelchest.png" alt="steelchest"><br> Steel Chestplate<br>
+            <div id="goldtext">500g</div><button onclick="addToCart('/images/steelchest.png','Steel_Chest','500')">Add to cart</button>
+        </div>
+        <div>
+            <img id="daedrichelm" src="/images/daedrichelm.png" alt="daedrichelm"><br> Daedric Helm<br>
+            <div id="goldtext">1150g</div><button onclick="addToCart('/images/daedrichelm.png','Daedric_Helm','1150')">Add to cart</button>
+        </div>
+        <div>
+            <img id="helmofyngol" src="/images/helmofyngol.png" alt="helmofyngol"><br> Helm of Yngol<br>
+            <div id="goldtext">400g</div><button onclick="addToCart('/images/helmofyngol.png','Helm_of_Yngol','400')">Add to cart</button>
+        </div>
+        <div>
+            <img id="dragonscalearmor" src="/images/dragonscalearmor.png" alt="dargonscalearmor"><br> Dragon Scale Armor<br>
+            <div id="goldtext">1000g</div><button onclick="addToCart('/images/dragonscalearmor.png','Dragon_scale_Armor','1000')">Add to cart</button>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="bookref">Books</h2>
+    </div>
+    <div class="bookshop">
+        <div>
+            <img id="conjurationbook" src="/images/conjurationbook.png" alt="conjurationbook"><br> Conjuration Tome<br>
+            <div id="goldtext">150g</div><button onclick="addToCart('/images/conjurationbook.png','Conjuration_book','150')">Add to cart</button>
+        </div>
+        <div>
+            <img id="restorationbook" src="/images/restorationbook.png" alt="restorationbook"><br> Restoration Tome<br>
+            <div id="goldtext">250g</div><button onclick="addToCart('/images/restorationbook.png','Restoration_book','250')">Add to cart</button>
+        </div>
+        <div>
+            <img id="illusionbook" src="/images/illusionbook.png" alt="illusionbook"><br> Illusion Tome<br>
+            <div id="goldtext">200g</div><button onclick="addToCart('/images/restorationbook.png','Illusion_book','200')">Add to cart</button>
+        </div>
+        <div>
+            <img id="alterationbook" src="/images/alterationbook.png" alt="alterationbook"><br> Alteration Tome<br>
+            <div id="goldtext">180g</div><button onclick="addToCart('/images/alterationbook.png','Alteration_book','180')">Add to cart</button>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="foodref">Food</h2>
+    </div>
+    <div class="foodshop">
+        <div>
+            <img id="sweetroll" src="/images/sweetroll.png" alt="sweetroll"><br> Sweet Roll<br>
+            <div id="goldtext">10g</div><button onclick="addToCart('/images/sweetroll.png','Sweetroll','10')">Add to cart</button>
+        </div>
+        <div>
+            <img id="cheese" src="/images/cheese.png" alt="cheese"><br> Wheel of Cheese<br>
+            <div id="goldtext">40g</div><button onclick="addToCart('/images/sweetroll.png','Alteration_book','40')">Add to cart</button>
+        </div>
+        <div>
+            <img id="ale" src="/images/ale.png" alt="ale"><br> Ale<br>
+            <div id="goldtext">20g</div><button onclick="addToCart('/images/ale.png','Ale','20')">Add to cart</button>
+        </div>
+        <div>
+            <img id="bread" src="/images/bread.png" alt="bread"><br> Bread<br>
+            <div id="goldtext">5g</div><button onclick="addToCart('/images/bread.png','Bread','5')">Add to cart</button>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="potionref">Potions</h2>
+    </div>
+    <div class="potionshop">
+        <div>
+            <img id="healthpotion" src="/images/healthpotion.png" alt="healthpotion"><br> Health Potion<br>
+            <div id="goldtext">100g</div><button onclick="addToCart('/images/healthpotion.png','Health_potion','100')">Add to cart</button>
+        </div>
+        <div>
+            <img id="manapotion" src="/images/manapotion.png" alt="manapotion"><br> Mana Potion<br>
+            <div id="goldtext">80g</div><button onclick="addToCart('/images/manapotion.png','Mana_potion','80')">Add to cart</button>
+        </div>
+        <div>
+            <img id="staminapotion" src="/images/staminapotion.png" alt="staminapotion"><br> Stamina Potion<br>
+            <div id="goldtext">80g</div><button onclick="addToCart('/images/staminapotion.png','Stamina_potion','80')">Add to cart</button>
+        </div>
+        <div>
+            <img id="skooma" src="/images/skooma.png" alt="skooma"><br> Skooma<br>
+            <div id="goldtext">200g</div><button onclick="addToCart('/images/skooma.png','skooma','200')">Add to cart</button>
+        </div>
+    </div>
+
+    <div>
+        <h2 id="ingredientsref">Ingredients</h2>
+    </div>
+    <div class="ingredientshop">
+        <div>
+            <img id="trollfat" src="/images/trollfat.png" alt="trollfat"><br> Troll Fat<br>
+            <div id="goldtext">60g</div><button onclick="addToCart('/images/trollfat.png','Troll_fat','60')">Add to cart</button>
+        </div>
+        <div>
+            <img id="butterflywing" src="/images/butterflywing.png" alt="butterflywing"><br> Butterfly Wing<br>
+            <div id="goldtext">40g</div><button onclick="addToCart('/images/butterflywing.png','butterfly_wing','40')">Add to cart</button>
+        </div>
+        <div>
+            <img id="blisterwort" src="/images/blisterwort.png" alt="blisterwort"><br> Blisterwort<br>
+            <div id="goldtext">80g</div><button onclick="addToCart('/images/blisterwort.png','Blisterwort','80')">Add to cart</button>
+        </div>
+        <div>
+            <img id="gianttoe" src="/images/gianttoe.png" alt="gianttoe"><br> Giant Toe<br>
+            <div id="goldtext">120g</div><button onclick="addToCart('/images/gianttoe.png','Giant_toe','120')">Add to cart</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img id="belathor" src="/images/belathor.png">
+        </div>
+        <div>
+            <img id="map" src="/images/map.jpg">
+        </div>
+        <div>
+            <p id="contacttext">contact me:<br><a id="email" href="mailto: david-rowe2@live.nmit.ac.nz">Belathor@bestshopever.co.skyrim</a></p>
+            <p id="storelocation">Belathor's General Goods<br>Whiterun, Skyrim, Tamriel.</p>
+            <audio controls style="margin: 0 auto; display: block;">
+            <source src="/audio/Dragonborn.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+    </div>
+</body>
