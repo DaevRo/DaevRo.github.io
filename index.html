@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/index.css">
+    <script src="/JS/addcart.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<header>
+    <img id="logo" src="/images/whiterun.png">
+
+    <div id="name">
+        Belathor's General Goods
+    </div>
+    <div id="headerul">
+        <ul>
+            <li class="headerli">
+                <a href="/html/home.html">HOME</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/shop.html">SHOP</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/cart.html">CART</a>
+            </li>
+            <li class="headerli">
+                <a href="/html/signin.html">LOG IN</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<body id="home">
+    <p id="hello">"Everything's for sale, my friend. Everything. If I had a sister, I'd sell her in a second."</p>
+
+    <p class="welcome">Welcome to Belethor's General Goods<br>The best prices in all Tamriel guaranteed!</p>
+
+    <p class="specialtext">Todays Specials!</p>
+    <div class="specials">
+        <div>
+            <img id="heart" src="/images/Daedra_heart.png" alt="Daedra_heart"><br> Daedric Heart<br>
+            <div id="goldtext">750g</div><button onclick="addToCart('/images/Daedra_heart.png','Daedra_heart','750')">Add to cart</button>
+        </div>
+        <div>
+            <img id="potion" src="/images/potion.png" alt="potion"><br> Potion of Strength<br>
+            <div id="goldtext">75g</div><button onclick="addToCart('/images/potion.png','Strength_potion','75')">Add to cart</button>
+        </div>
+        <div>
+            <img id="book" src="/images/conjurationbook.png" alt="conjurationbook"><br> Conjuration Tome<br>
+            <div id="goldtext">150g</div><button onclick="addToCart('/images/conjurationbook.png','Conjuration_book','150')">Add to cart</button>
+        </div>
+        <div>
+            <img id="blacksoul" src="/images/BlackSoulGem.png" alt="blacksoulgem"><br> Black SoulGem<br>
+            <div id="goldtext">500g</div><button onclick="addToCart('/images/BlackSoulGem.png','Black_soulgem','500')" id="item23">Add to cart</button>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <img id="belathor" src="/images/belathor.png">
+        </div>
+        <div>
+            <img id="map" src="/images/map.jpg">
+        </div>
+        <div>
+            <p id="contacttext">contact me:<br><a id="email" href="mailto: david-rowe2@live.nmit.ac.nz">Belathor@bestshopever.co.skyrim</a></p>
+            <p id="storelocation">Belathor's General Goods<br>Whiterun, Skyrim, Tamriel.</p>
+            <audio controls style="margin: 0 auto; display: block;">
+            <source src="/audio/Dragonborn.mp3" type="audio/mpeg">
+        </audio>
+        </div>
+    </div>
+</body>
+
+</html>
